@@ -1,0 +1,8 @@
+.UserInfo {
+  width: 100%;
+  background-color: var(--sixth-color);
+  border-radius: 15px;
+  box-shadow: 0px 11px 22px 1px rgba(0, 0, 0, 0.1);
+  margin: 24px 0;
+  padding: 52px 0;
+}

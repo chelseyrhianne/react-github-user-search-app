@@ -1,0 +1,15 @@
+.Toggle {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 20px;
+  max-height: 20px;
+  padding: 12px;
+}

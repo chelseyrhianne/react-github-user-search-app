@@ -1,0 +1,13 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Header p {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 700;
+}
