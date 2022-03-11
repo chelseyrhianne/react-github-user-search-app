@@ -1,7 +1,27 @@
 .Links {
   width: 70%;
   text-align: left;
-  padding: 0 32px;
   margin-left: auto;
   margin-right: 48px;
+  display: flex;
+}
+
+.Link-pair {
+  flex: 1;
+}
+
+.Link {
+  display: flex;
+}
+
+img {
+  max-width: 20px;
+  max-height: 20px;
+  align-self: center;
+  padding-right: 16px;
+}
+
+img.Location {
+  max-width: 14px;
+  padding-right: 20px;
 }

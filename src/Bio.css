@@ -1,0 +1,9 @@
+.Bio {
+  width: 62%;
+  text-align: left;
+  padding: 0 32px;
+  margin-left: auto;
+  margin-right: 48px;
+  display: flex;
+  position: relative;
+}
