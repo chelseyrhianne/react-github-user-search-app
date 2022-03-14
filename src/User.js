@@ -16,7 +16,7 @@ export default function User(props) {
       loaded: true,
       name: response.data.name,
       login: response.data.login,
-      joined: response.data.created_at,
+      date: response.data.created_at,
       avatar: response.data.avatar_url,
       repos: response.data.public_repos,
       followers: response.data.followers,
@@ -42,25 +42,30 @@ export default function User(props) {
     setUser(event.target.value);
   }
 
-  return (
-    <div className="User">
-      <form className="user-search" onSubmit={handleSubmit}>
-        <input
-          id="username"
-          type="text"
-          className="search-bar"
-          autoComplete="off"
-          placeholder="Search GitHub username..."
-          onChange={handleChange}
-        />
-        <input type="submit" className="search-button" value="Search" />
-      </form>
-      <div className="userinfo">
-        <Profile data={userData} />
-        <Bio data={userData} />
-        <Stats data={userData} />
-        <Links data={userData} />
+  if (userData.loaded) {
+    return (
+      <div className="User">
+        <form className="user-search" onSubmit={handleSubmit}>
+          <input
+            id="username"
+            type="text"
+            className="search-bar"
+            autoComplete="off"
+            placeholder="Search GitHub username..."
+            onChange={handleChange}
+          />
+          <input type="submit" className="search-button" value="Search" />
+        </form>
+        <div className="userinfo">
+          <Profile data={userData} />
+          <Bio data={userData} />
+          <Stats data={userData} />
+          <Links data={userData} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    search();
+    return "Loading...";
+  }
 }

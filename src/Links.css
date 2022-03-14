@@ -25,3 +25,16 @@ img.Location {
   max-width: 14px;
   padding-right: 20px;
 }
+
+a,
+p {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--third-color);
+  margin: 15px 0;
+}
+
+.unavailable {
+  color: var(--secondary-color);
+}
